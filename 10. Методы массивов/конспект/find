@@ -1,0 +1,32 @@
+Метод find() возвращает значение первого найденного в массиве элемента, которое удовлетворяет условию переданному в callback функции. 
+В противном случае возвращается undefined
+Метод find вызывает переданную функцию callback один раз для каждого элемента, присутствующего в массиве, до тех пор, пока она не вернёт true
+Метод find не изменяет массив, для которого он был вызван.
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const result = numbers.find((element) => {
+  return element === 2;
+});
+
+console.log(result); // 2
+
+
+
+Сравнение с filter 
+
+
+const isTwoOrFour = (element) => {
+  return (element === 2) || (element === 4)
+}
+
+const numbers = [1, 2, 3, 4, 5, 2, 6]
+
+const resultWithFilter = numbers.filter(isTwoOrFour(element))
+const resultWithFind = numbers.find(isTwoOrFour(element))
+
+console.log(resultWithFilter);
+// [2, 4, 2]
+
+console.log(resultWithFind);
+// 2

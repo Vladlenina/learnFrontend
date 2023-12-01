@@ -1,0 +1,9 @@
+//Метод findLast ищет первый элемент с конца массива согласно переданному в параметре коллбэку.
+//Если элемента нет, то в результат возвращается undefined.
+
+const array1 = [5, 12, 50, 130, 44];
+
+const found = array1.findLast((element) => element > 45);
+
+console.log(found);
+// Expected output: 130

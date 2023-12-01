@@ -1,0 +1,10 @@
+Метод map() создаёт новый массив с результатом вызова указанной функции для каждого элемента массива.
+
+const numbers = [1, 4, 9];
+const roots = numbers.map(Math.sqrt);
+// теперь roots равен [1, 2, 3], а numbers всё ещё равен [1, 4, 9]
+
+
+const numbers = [1, 4, 9];
+const doubles = numbers.map((num) => num * 2);
+// теперь doubles равен [2, 8, 18], а numbers всё ещё равен [1, 4, 9]
