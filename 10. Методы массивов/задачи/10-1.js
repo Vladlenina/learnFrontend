@@ -16,7 +16,7 @@
 //   return newArr
 // }
 
-const arr = arrayDiff([1, 2], [1, 2]);
+const arr = arrayDiff([1, 2], [1]);
 console.log(arr); // [2]
 
 const arr2 = arrayDiff([1, 2, 2, 4, 4, 3], [2, 4]);

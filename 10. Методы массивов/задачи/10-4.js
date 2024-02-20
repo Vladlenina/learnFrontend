@@ -17,3 +17,17 @@ console.log(newArr); // [ 1, 2, 3, 4, 5, 6 ]
 function unique(arr) {
   return arr.filter((elem, index) => arr.indexOf(elem) === index);
 }
+
+// const arr = [1, 2, 2, 3, 3, 4, 5, 6, 6];
+//   const newArr = unique(arr);
+//   console.log(newArr); // [ 1, 2, 3, 4, 5, 6 ]
+
+//   function unique(array){
+//     const result = [];
+//      array.forEach((element) => {
+//       if (!result.includes(element)){
+//           result.push(element);
+//       }
+//     })
+//     return result
+//   }

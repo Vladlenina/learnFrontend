@@ -15,5 +15,5 @@ console.log(newArr); // [1, "42", 67, -45, "apple"]
 // }
 
 function withoutEmpty(array) {
-  return arr.filter((elem) => elem);
+  return array.filter((elem) => elem);
 }
